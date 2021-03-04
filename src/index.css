@@ -1,0 +1,205 @@
+body {
+  background-color: #5f27cd;
+}
+
+.App .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 35rem;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 93%;
+  height: 25%;
+  font-size: 2rem;
+  font-family: "Permanent Marker",cursive;
+}
+
+@media screen and (max-width: 1024px) {
+  .App .container .header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .container .header {
+    font-size: 1rem;
+  }
+}
+
+.App .container .header h2 {
+  color: #5f27cd;
+  text-align: center;
+}
+
+.App .container .header i {
+  color: #5f27cd;
+}
+
+.App .container .main {
+  width: 90%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.App .container .main p {
+  font-size: 2rem;
+  font-family: "Permanent Marker",cursive;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .App .container .main p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .container .main p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .App .container .main p {
+    font-size: 0.8rem;
+  }
+}
+
+.App .container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .container .search .search-bar {
+  width: 12rem;
+  height: 3rem;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .App .container .search .search-bar {
+    width: 8rem;
+    height: 2rem;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .App .container .search .search-bar {
+    width: 4rem;
+    height: 1rem;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .App .container .search .search-bar {
+    width: 4rem;
+    height: 0.5rem;
+    font-size: 10px;
+  }
+}
+
+.App .container .search .search-bar:focus {
+  border: none;
+}
+
+.App .container .search .search-bar:hover, .App .container .search .search-bar:focus {
+  border: 1.5px solid #5f27cd;
+  background-color: white;
+  outline: none;
+}
+
+.App .container .search button {
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.App .container .search button:hover {
+  color: white;
+  background: #5f27cd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.App .container .footer {
+  width: 95%;
+  margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .container .footer .get-quote {
+  border: none;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 0.3em;
+  font-size: 1em;
+  margin-left: 1em;
+  font-weight: 500;
+}
+
+.App .container .footer .get-quote:hover {
+  color: white;
+  background-color: #5f27cd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=index.css.map */

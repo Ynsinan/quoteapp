@@ -1,0 +1,149 @@
+$primaryColor : #5f27cd;
+$textColor1: black;
+$xxl :  1024px;
+$xl: 768px;
+$l:500px;
+$m:350px;
+$s:280px;
+body{
+    background-color: $primaryColor;
+}
+.App{  
+    .container{
+        display: flex;
+        position: absolute;
+        height: 35rem;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        border-radius: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 93%;
+                height: 25%;
+                font-size: 2rem;
+                font-family: "Permanent Marker",cursive;
+                @media screen and (max-width: $xxl) {
+                            font-size: 1.5rem;
+
+                }
+                 @media screen and (max-width: $xl) {
+                            font-size: 1rem;
+
+                }
+
+                    h2{
+                        color: $primaryColor;
+                        text-align: center;
+                    }
+                    i{
+                        color: $primaryColor;
+                    }
+            }
+            .main{
+            width: 90%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            
+                    p{
+                        font-size: 2rem;
+                        font-family: "Permanent Marker",cursive;
+                        margin: 1rem;
+                        @media screen and (max-width: $xxl) {
+                            font-size: 1.5rem;
+
+                        }
+                        @media screen and (max-width: $xl) {
+                            font-size: 1rem;
+
+                        }
+                        @media screen and (max-width: $s) {
+                            font-size: 0.8rem;
+                        }
+                    }
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .search-bar{
+                    width: 12rem;
+                    height: 3rem;
+                    font-size: 20px;
+                    border: none;
+                    cursor: pointer;
+                    @media screen and (max-width: $xxl) {
+                            width: 8rem;
+                            height: 2rem;
+                            font-size: 15px;
+
+                    }
+                    @media screen and (max-width: $m) {
+                            width: 4rem;
+                            height: 1rem;
+                            font-size: 10px;
+
+                    }
+                    @media screen and (max-width: $s) {
+                            width: 4rem;
+                            height: 0.5rem;
+                            font-size: 10px;
+
+                    }
+                }
+                .search-bar:focus{
+                    border: none;
+                }
+                .search-bar:hover, .search-bar:focus {
+                    border: 1.5px solid $primaryColor;
+                    background-color: white;
+                    outline: none;
+                }
+                button{
+                    border: none;
+                    height:3rem;
+                    width: 3rem;
+                    cursor: pointer;
+                }
+                button:hover{
+                    color: white;
+                    background: $primaryColor ;
+                    transition: 1s;
+                }
+            }
+            .footer{
+                width: 95%;
+                margin-bottom: 0.5em;
+                display: flex;
+                justify-content: center;
+                    .get-quote{
+                        border: none;
+                        height: 3rem;
+                        width: 6rem;
+                        border-radius: 0.3em;
+                        font-size: 1em;
+                        margin-left: 1em;
+                        font-weight: 500;
+                    }
+                    .get-quote:hover{
+                        color: white;
+                        background-color: $primaryColor;
+                        transition: 1s;
+                    }
+            }
+        
+            
+    }
+}
