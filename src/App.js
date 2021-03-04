@@ -3,7 +3,7 @@ import './App.css';
 import Search from './Components/Search.js';
 import Main from './Components/Main.js';
 import Footer from './Components/Footer.js';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 
 
@@ -30,7 +30,7 @@ function App() {
     }
   }
 
-  const getQuote = () => {
+  const getQuote = useCallback(() => {
     fetch("https://type.fit/api/quotes")
       .then((response) => response.json())
       .then((data) => {
@@ -42,7 +42,7 @@ function App() {
           setQuote(data[rnd]?.text)
         }
       });
-  };
+  }, []);
 
 
   useEffect(() => {
