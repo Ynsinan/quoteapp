@@ -47,7 +47,7 @@ function App() {
 
   useEffect(() => {
     getQuote();
-  }, [])
+  }, [getQuote])
 
 
   return (
