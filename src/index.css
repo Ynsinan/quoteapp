@@ -1,5 +1,6 @@
 body {
   background-color: #5f27cd;
+  font-family: 'Akaya Telivigala', cursive;
 }
 
 .App .container {
@@ -64,7 +65,6 @@ body {
   width: 93%;
   height: 25%;
   font-size: 2rem;
-  font-family: "Permanent Marker",cursive;
 }
 
 @media screen and (max-width: 1024px) {
@@ -122,7 +122,6 @@ body {
 
 .App .container .main p {
   font-size: 2rem;
-  font-family: "Permanent Marker",cursive;
   margin: 1rem;
 }
 
@@ -245,6 +244,7 @@ body {
 }
 
 .App .container .footer .get-quote {
+  font-family: 'Akaya Telivigala', cursive;
   border: none;
   height: 3rem;
   width: 6rem;
