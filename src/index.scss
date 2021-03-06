@@ -22,6 +22,22 @@ body{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+         @media screen and (max-width: $xxl) {
+            height: 32rem;
+
+        }
+        @media screen and (max-width: $xl) {
+            height: 25rem;
+
+        }
+        @media screen and (max-width: $l) {
+            height: 20rem;
+
+        }
+        @media screen and (max-width: $m) {
+            height: 20rem;
+
+        }
             .header{
                 display: flex;
                 justify-content: space-between;
@@ -35,8 +51,16 @@ body{
 
                 }
                  @media screen and (max-width: $xl) {
-                            font-size: 1rem;
+                            font-size: 1.25rem;
 
+                }
+                @media screen and (max-width: $l) {
+                            font-size: 1rem;
+                            height: 20%;
+
+                }
+                @media screen and (max-width: $l) {
+                            font-size: 0.7rem;
                 }
 
                     h2{
@@ -68,8 +92,8 @@ body{
                             font-size: 1rem;
 
                         }
-                        @media screen and (max-width: $s) {
-                            font-size: 0.8rem;
+                        @media screen and (max-width: $l) {
+                            font-size: 0.7rem;
                         }
                     }
             }
@@ -96,11 +120,10 @@ body{
                             font-size: 10px;
 
                     }
-                    @media screen and (max-width: $s) {
-                            width: 4rem;
-                            height: 0.5rem;
+                    @media screen and (max-width: $l) {
+                            width: 6rem;
+                            height: 1.4rem;
                             font-size: 10px;
-
                     }
                 }
                 .search-bar:focus{
@@ -116,6 +139,21 @@ body{
                     height:3rem;
                     width: 3rem;
                     cursor: pointer;
+                    @media screen and (max-width: $xxl) {
+                            height: 2.3rem;
+                            width: 2.3rem;
+
+                    }
+                    @media screen and (max-width: $xl) {
+                            height: 2rem;
+                            width: 2rem;
+
+                    }
+                    @media screen and (max-width: $l) {
+                            height: 1.3rem;
+                            width: 1.3rem;
+
+                    }
                 }
                 button:hover{
                     color: white;
@@ -136,7 +174,19 @@ body{
                         font-size: 1em;
                         margin-left: 1em;
                         font-weight: 500;
+                         @media screen and (max-width: $xxl) {
+                            height: 2.5rem;
+
+                        }
+                        @media screen and (max-width: $xl) {
+                            height: 2rem;
+                        }
+                        @media screen and (max-width: $l) {
+                            height: 1.5rem;
+                            font-size: 0.8em;
+                        }
                     }
+                    
                     .get-quote:hover{
                         color: white;
                         background-color: $primaryColor;

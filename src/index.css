@@ -27,6 +27,30 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .App .container {
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .container {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App .container {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .App .container {
+    height: 20rem;
+  }
+}
+
 .App .container .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +75,20 @@ body {
 
 @media screen and (max-width: 768px) {
   .App .container .header {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App .container .header {
     font-size: 1rem;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App .container .header {
+    font-size: 0.7rem;
   }
 }
 
@@ -101,9 +138,9 @@ body {
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 500px) {
   .App .container .main p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -143,10 +180,10 @@ body {
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 500px) {
   .App .container .search .search-bar {
-    width: 4rem;
-    height: 0.5rem;
+    width: 6rem;
+    height: 1.4rem;
     font-size: 10px;
   }
 }
@@ -166,6 +203,27 @@ body {
   height: 3rem;
   width: 3rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .App .container .search button {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .container .search button {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App .container .search button {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
 }
 
 .App .container .search button:hover {
@@ -194,6 +252,25 @@ body {
   font-size: 1em;
   margin-left: 1em;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .App .container .footer .get-quote {
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App .container .footer .get-quote {
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .App .container .footer .get-quote {
+    height: 1.5rem;
+    font-size: 0.8em;
+  }
 }
 
 .App .container .footer .get-quote:hover {
